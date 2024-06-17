@@ -1,0 +1,14 @@
+on:
+    workflow_dispatch:
+jobs:
+    sync-template:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Sync template
+              uses: ahmadnassri/action-template-repository-sync@v2.6.3
+              with:
+                  github-token: ${{ secrets.GH_TOKEN }}
+                  dry-run: true
+                  config: .github/template-sync.yml
