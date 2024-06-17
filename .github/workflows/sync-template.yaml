@@ -1,0 +1,17 @@
+on:
+    push:
+        branches: main
+    workflow_dispatch:
+jobs:
+    Sync-Template:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            pull-requests: write
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: actions-template-sync
+              uses: AndreasAugustin/actions-template-sync@v2
+              with:
+                  source_repo_path: anurag-kanwar-demo-org/d-t
