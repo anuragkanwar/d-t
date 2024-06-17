@@ -13,4 +13,3 @@ jobs:
               with:
                   github-token: ${{ secrets.GH_TOKEN }}
                   dry-run: true
-                  config: .github/template-sync.yml
