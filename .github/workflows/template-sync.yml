@@ -7,9 +7,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v2
             - name: Sync template
-              uses: ahmadnassri/action-template-repository-sync@v2.6.3
+              uses: ahmadnassri/action-template-repository-sync@v2
               with:
                   github-token: ${{ secrets.GH_TOKEN }}
                   dry-run: false
