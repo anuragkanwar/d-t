@@ -9,6 +9,7 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v4
             - name: Sync template
-              uses: ahmadnassri/action-template-repository-sync@v2
+              uses: ahmadnassri/action-template-repository-sync@v2.6.3
               with:
                   github-token: ${{ secrets.GH_TOKEN }}
+                  dry-run: false
