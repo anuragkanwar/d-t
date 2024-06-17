@@ -1,7 +1,7 @@
 dependents:
   - "d-r" # include
 additional:
-  - "d-r" # include
+  - "anuragkanwar/d-r" # include
 files:
   # you probably want to exclude these files:
   - "!.github/workflows/template-sync.yml"
