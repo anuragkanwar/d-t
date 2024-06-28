@@ -1,6 +1,2 @@
 additional:
-  - "d-r" # include
-files:
-  - "!.github/workflows/template-sync.yml"
-  - "!.github/template-sync.yml"
-  - "!.github/workflows/template-sync.yml"
+  - "d-r"
