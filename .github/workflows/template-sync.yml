@@ -6,10 +6,11 @@ jobs:
     sync-template:
         runs-on: ubuntu-latest
         steps:
+            - name: Queue
+              uses: ahmadnassri/action-workflow-queue@v1.2
             - name: Checkout
-              uses: actions/checkout@v2
+              uses: actions/checkout@v4.1.7
             - name: Sync template
-              uses: ahmadnassri/action-template-repository-sync@v2.6
+              uses: ahmadnassri/action-template-repository-sync@v2.6.3
               with:
                   github-token: ${{ secrets.GH_TOKEN }}
-                  dry-run: false
